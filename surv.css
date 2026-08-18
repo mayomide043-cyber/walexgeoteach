@@ -638,3 +638,475 @@ body{
     }
 
 }
+/* =========================================
+   TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991px){
+
+    .navbar{
+        padding:14px 0;
+    }
+
+    .navbar-brand{
+        font-size:1.3rem;
+    }
+
+    .navbar-toggler{
+        background:rgba(255,255,255,.9);
+        border:none;
+        padding:8px 10px;
+    }
+
+    .navbar-collapse{
+        background:var(--green);
+        padding:15px 20px 20px;
+        border-radius:0 0 15px 15px;
+    }
+
+    .nav-link{
+        margin-left:0;
+        padding:10px 0 !important;
+    }
+
+    .btn-warning{
+        display:inline-block;
+        margin-top:10px;
+    }
+
+    .hero-content{
+        width:90%;
+        max-width:750px;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:1.05rem;
+    }
+
+    .services,
+    .why-us,
+    .properties,
+    .gallery,
+    .testimonials,
+    .contact{
+        padding:80px 0;
+    }
+
+    .section-title{
+        margin-bottom:45px;
+    }
+
+    .section-title h2{
+        font-size:36px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 576px){
+
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+    .container{
+        width:100%;
+        padding-left:18px;
+        padding-right:18px;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar{
+        padding:12px 0;
+    }
+
+    .navbar-brand{
+        font-size:1.05rem;
+        white-space:nowrap;
+    }
+
+    .navbar-brand i{
+        margin-right:5px;
+    }
+
+    .navbar-toggler{
+        padding:6px 9px;
+        font-size:.9rem;
+    }
+
+    .navbar-collapse{
+        margin-top:10px;
+        padding:12px 15px 18px;
+    }
+
+    .nav-link{
+        margin:0;
+        padding:9px 0 !important;
+        font-size:14px;
+    }
+
+    .btn-warning{
+        padding:10px 20px;
+        font-size:14px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        height:100svh;
+        min-height:650px;
+    }
+
+    .swiper{
+        height:100svh;
+        min-height:650px;
+    }
+
+    .swiper-slide{
+        background-position:center;
+    }
+
+    .hero-content{
+        width:92%;
+        top:52%;
+    }
+
+    .hero-content h1{
+        font-size:2.1rem;
+        line-height:1.2;
+        margin-bottom:10px;
+    }
+
+    .hero-content p{
+        font-size:.9rem;
+        line-height:1.6;
+        margin:18px 0;
+    }
+
+    .hero-buttons{
+        gap:10px;
+    }
+
+    .hero-buttons a{
+        padding:12px 20px;
+        font-size:13px;
+    }
+
+    .scroll-down{
+        bottom:18px;
+        font-size:1.5rem;
+    }
+
+
+    /* SECTION TITLES */
+
+    .section-title{
+        margin-bottom:35px;
+    }
+
+    .section-tag{
+        font-size:12px;
+        letter-spacing:1.5px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+        line-height:1.25;
+        margin:10px 0;
+    }
+
+    .section-title p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* SERVICES */
+
+    .services{
+        padding:65px 0;
+    }
+
+    .service-card{
+        border-radius:15px;
+    }
+
+    .service-card img{
+        height:210px;
+    }
+
+    .service-content{
+        padding:22px;
+    }
+
+    .service-content i{
+        font-size:30px;
+    }
+
+    .service-content h3{
+        font-size:20px;
+    }
+
+    .service-content p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* WHY US */
+
+    .why-us{
+        padding:65px 0;
+    }
+
+    .why-card{
+        padding:28px 20px;
+        border-radius:15px;
+    }
+
+    .why-card i{
+        font-size:40px;
+    }
+
+    .why-card h4{
+        font-size:19px;
+    }
+
+    .why-card p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* PROPERTIES */
+
+    .properties{
+        padding:65px 0;
+    }
+
+    .property-card{
+        border-radius:15px;
+    }
+
+    .property-card img{
+        height:220px;
+    }
+
+    .property-info{
+        padding:20px;
+    }
+
+    .property-info h4{
+        font-size:19px;
+    }
+
+    .property-info p{
+        font-size:14px;
+    }
+
+    .property-info h5{
+        font-size:18px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery{
+        padding:65px 0;
+    }
+
+    .gallery-card{
+        border-radius:15px;
+    }
+
+    .gallery-card img{
+        height:230px;
+    }
+
+    .gallery-overlay{
+        opacity:1;
+        background:linear-gradient(
+            transparent,
+            rgba(15,81,50,.85)
+        );
+        align-items:flex-end;
+        justify-content:flex-start;
+        padding:20px;
+    }
+
+    .gallery-overlay h4{
+        font-size:18px;
+        transform:none;
+    }
+
+
+    /* TESTIMONIALS */
+
+    .testimonials{
+        padding:65px 0;
+    }
+
+    .testimonial-card{
+        padding:25px 20px;
+        border-radius:15px;
+    }
+
+    .testimonial-stars{
+        font-size:18px;
+    }
+
+    .testimonial-card p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .client-info{
+        margin-top:20px;
+    }
+
+
+    /* CONTACT */
+
+    .contact{
+        padding:65px 0;
+    }
+
+    .contact-info{
+        padding:28px 22px;
+        border-radius:15px;
+    }
+
+    .contact-info h3,
+    .contact-form h3{
+        font-size:24px;
+    }
+
+    .contact-info > p{
+        font-size:14px;
+    }
+
+    .contact-item{
+        gap:12px;
+        margin-bottom:22px;
+    }
+
+    .contact-icon{
+        width:42px;
+        height:42px;
+        min-width:42px;
+        font-size:16px;
+    }
+
+    .contact-item h5{
+        font-size:16px;
+    }
+
+    .contact-item a,
+    .contact-item p{
+        font-size:14px;
+    }
+
+    .contact-form{
+        padding:25px 20px;
+        border-radius:15px;
+    }
+
+    .contact-form label{
+        font-size:14px;
+    }
+
+    .contact-form .form-control{
+        font-size:14px;
+        padding:11px 13px;
+    }
+
+    .contact-btn{
+        width:100%;
+        padding:13px 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        padding:55px 0 20px;
+    }
+
+    .footer-brand h3{
+        font-size:21px;
+    }
+
+    .footer-brand p{
+        font-size:14px;
+    }
+
+    .footer h4{
+        font-size:17px;
+        margin-bottom:18px;
+    }
+
+    .footer-links a,
+    .footer-contact p,
+    .footer-contact a{
+        font-size:14px;
+    }
+
+    .footer-bottom{
+        margin-top:40px;
+        padding-top:20px;
+        gap:10px;
+    }
+
+    .footer-bottom p{
+        font-size:12px;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+========================================= */
+
+@media (max-width: 380px){
+
+    .navbar-brand{
+        font-size:.95rem;
+    }
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:.82rem;
+    }
+
+    .hero-buttons a{
+        padding:10px 16px;
+        font-size:12px;
+    }
+
+    .section-title h2{
+        font-size:25px;
+    }
+
+    .service-card img,
+    .property-card img,
+    .gallery-card img{
+        height:200px;
+    }
+
+}
