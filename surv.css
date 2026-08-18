@@ -637,6 +637,7 @@ body{
         justify-content:center;
     }
 
+        border-radius:0 0 15px 15px;
 }
 /* =========================================
    TABLET RESPONSIVE DESIGN
@@ -1107,6 +1108,93 @@ body{
     .property-card img,
     .gallery-card img{
         height:200px;
+    }
+
+}
+
+
+/* =========================================
+   FINAL MOBILE POLISH
+========================================= */
+
+@media (max-width: 576px){
+
+    /* Prevent anything from creating horizontal scrolling */
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    /* Make images load/display correctly inside their containers */
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* Keep cards from becoming too wide */
+    .service-card,
+    .property-card,
+    .gallery-card,
+    .testimonial-card,
+    .contact-info,
+    .contact-form{
+        width:100%;
+    }
+
+    /* Better section spacing */
+    .section-title{
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    /* Better hero on phones */
+    .hero-content{
+        width:90%;
+        max-width:100%;
+        padding:0 5px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+        line-height:1.2;
+        word-wrap:break-word;
+    }
+
+    .hero-content p{
+        font-size:.9rem;
+    }
+
+    /* Stack hero buttons nicely */
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .hero-buttons a{
+        width:85%;
+        max-width:280px;
+        text-align:center;
+    }
+
+    /* Make form fields comfortable on phones */
+    .contact-form{
+        width:100%;
+        padding:25px 18px;
+    }
+
+    /* Prevent long phone numbers/emails from breaking layout */
+    .contact-item a,
+    .contact-item p{
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+    /* Better footer on small screens */
+    .footer{
+        overflow:hidden;
     }
 
 }
